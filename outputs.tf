@@ -31,11 +31,6 @@ output "location" {
   value       = local.cluster_location
 }
 
-output "region" {
-  description = "Cluster region"
-  value       = local.cluster_region
-}
-
 output "zones" {
   description = "List of zones in which the cluster resides"
   value       = local.cluster_zones
