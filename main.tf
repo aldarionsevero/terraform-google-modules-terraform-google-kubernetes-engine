@@ -89,7 +89,6 @@ locals {
   # cluster locals
   cluster_name                               = local.cluster_output_name
   cluster_location                           = local.cluster_output_location
-  cluster_region                             = local.cluster_output_region
   cluster_zones                              = sort(local.cluster_output_zones)
   cluster_endpoint                           = local.cluster_output_endpoint
   cluster_ca_certificate                     = local.cluster_master_auth_map["cluster_ca_certificate"]
