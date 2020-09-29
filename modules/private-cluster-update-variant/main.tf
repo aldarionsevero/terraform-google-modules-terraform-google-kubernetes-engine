@@ -64,7 +64,6 @@ locals {
 
   cluster_output_name           = google_container_cluster.primary.name
   cluster_output_location       = google_container_cluster.primary.location
-  cluster_output_region         = google_container_cluster.primary.region
   cluster_output_regional_zones = google_container_cluster.primary.node_locations
   cluster_output_zonal_zones    = local.zone_count > 1 ? slice(var.zones, 1, local.zone_count) : []
   cluster_output_zones          = local.cluster_output_regional_zones
